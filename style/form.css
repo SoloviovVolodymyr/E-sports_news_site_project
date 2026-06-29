@@ -1,0 +1,85 @@
+body {
+    padding: 0em;
+    margin: 0em;
+    background-color: #FAD3D3;
+}
+
+header {
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+    background-color: #EF8282;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a {
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    border-style: solid;
+    border-width: 0.1em;
+    border-radius: 1em;
+    padding: 0.5em;
+    margin: 2em;
+    box-shadow: 0 0.1em;
+    transition: 0.2s;
+    color: black;
+}
+
+nav a:hover {
+    box-shadow: 0 0;
+    font-size: 15px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(3, [col-start] 1fr);
+    grid-template-rows: repeat(2, [row-start]  1fr auto);
+}
+
+fieldset {
+    margin: 2em;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+input[type] {
+    border-style: none;
+    border-radius: 0.5em;
+    background-color: #E9B8B8;
+    margin-bottom: 1em;
+}
+
+label {
+    font-size: 30px;
+}
+
+.submit_button{
+    align-content: center;
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 1;
+    justify-self: flex-start;
+    border-style: none;
+
+}
+
+button {
+    background-color: #9a5353; /* Темно-червоний/коричневий колір фону */
+    color: #ffffff; /* Білий колір тексту */
+    border: none; /* Прибираємо стандартну рамку браузера */
+    padding: 16px 48px; /* Внутрішні відступи: 16px зверху/знизу, 48px по боках */
+    font-family: "Times New Roman", Georgia, serif; /* Шрифт із зарубками */
+    font-size: 22px; /* Розмір тексту */
+    cursor: pointer; /* Змінюємо курсор на "руку" при наведенні */
+    transition: background-color 0.2s ease; /* Робимо плавний перехід кольору */
+}
+
+.games {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 2;
+}
+

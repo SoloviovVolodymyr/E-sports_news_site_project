@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/form.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="news.html">Новини</a>
+            <a href="authorization.html">Авторизація</a>
+            <a href="tournaments.html">Турніри</a>
+            <a href="">Допомога у розвитку</a>
+        </nav>
+    </header>
+    <form>
+        <div class="personal_data">
+            <fieldset>
+                <legend>Персональні дані</legend>
+                <label for="name">Ім'я:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="surname">Прізвище:</label><br>
+                <input type="text" id="surname" name="surname" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+            </fieldset>
+        </div>
+        
+        <div class ="submit_button">
+            <button type="submit">Submit</button>
+        </div>
+
+        <div class="games">
+            <label for="games">Яку дисципліну ви ще б хотіли бачити?</label><br><br>
+            <input list="games">
+            <datalist id="games">
+                <option value="CS2">
+                <option value="League of Legends">
+                <option value="Valorant">
+                <option value="Rainbow Six Siege">
+            </datalist>
+        </div>
+    </form>
+</body>
+</html>
